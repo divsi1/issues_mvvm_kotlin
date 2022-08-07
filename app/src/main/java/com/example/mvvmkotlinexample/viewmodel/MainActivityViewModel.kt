@@ -8,13 +8,7 @@ import com.example.mvvmkotlinexample.repository.MainActivityRepository
 
 class MainActivityViewModel : ViewModel() {
 
-//    var servicesLiveData: MutableLiveData<ServicesSetterGetter>? = null
     var issuesLiveData: MutableLiveData<ArrayList<IssuesDataClass>>? = null
-
-//    fun getUser() : LiveData<ServicesSetterGetter>? {
-//        servicesLiveData = MainActivityRepository.getServicesApiCall()
-//        return servicesLiveData
-//    }
 
     fun getIssues() : LiveData<ArrayList<IssuesDataClass>>? {
         issuesLiveData = MainActivityRepository.getIssuesApiCall()

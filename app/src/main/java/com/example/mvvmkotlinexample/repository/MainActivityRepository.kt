@@ -17,7 +17,6 @@ object MainActivityRepository {
 
         call.enqueue(object: Callback<ArrayList<IssuesDataClass>> {
             override fun onFailure(call: Call<ArrayList<IssuesDataClass>>, t: Throwable) {
-                // TODO("Not yet implemented")
                 Log.v("DEBUG : ", t.message.toString())
             }
 
